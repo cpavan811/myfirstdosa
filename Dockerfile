@@ -27,7 +27,7 @@ RUN apt-get install -y nginx
 RUN rm -v /etc/nginx/nginx.conf
 
 # Copy a configuration file from the current directory
-ADD nginx.conf /etc/nginx/
+# ADD nginx.conf /etc/nginx/
 
 RUN mkdir /etc/nginx/logs
 
