@@ -24,10 +24,10 @@ RUN apt-get install -y vim wget dialog net-tools
 RUN apt-get install -y nginx
 
 # Remove the default Nginx configuration file
-# RUN rm -v /etc/nginx/nginx.conf
+RUN rm -v /etc/nginx/nginx.conf
 
 # Copy a configuration file from the current directory
-# ADD nginx.conf /etc/nginx/
+ADD nginx.conf /etc/nginx/
 
 RUN mkdir /etc/nginx/logs
 
